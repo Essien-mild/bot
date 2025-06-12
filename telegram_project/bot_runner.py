@@ -114,7 +114,8 @@ USERS = {
     "210901234": {"username": "maeve", "password": "45343..58", "balance": 1280, "referrals": [], "verified_by": None},
     "109923456": {"username": "Murrung", "password": "garoo22231", "balance": 1425, "referrals": [], "verified_by": None},
     "106634567": {"username": "olivia", "password": "wombat99", "balance": 3320, "referrals": [], "verified_by": None},#
-    "100345678": {"username": "noah", "password": "76574547", "balance": 750, "referrals": [], "verified_by": None},
+    "100345678": {"username": "noah", "password": "76574547", "balance": 750, "referrals": [], "verified_by": None},  ###
+    
     "109956789": {"username": "ava", "password": "koala33", "balance": 45, "referrals": [], "verified_by": None},
     "100567890": {"username": "william", "password": "didgeridoo88", "balance": 986, "referrals": [], "verified_by": None},
     "100907801": {"username": "silvia", "password": "sophiabackout", "balance": 204, "referrals": [], "verified_by": None},
@@ -170,7 +171,8 @@ USERS = {
     "105678901": {"username": "Djamarrkuli", "password": "s6536516", "balance": 893, "referrals": [], "verified_by": None},
     "105772312": {"username": "finn", "password": "platypus93", "balance": 350, "referrals": [], "verified_by": None},
     "105891223": {"username": "layla", "password": "reefshark61", "balance": 1010, "referrals": [], "verified_by": None},
-    "105901234": {"username": "gabriel", "password": "tree24555", "balance": 470, "referrals": [], "verified_by": None},
+    "105901234": {"username": "gabriel", "password": "tree24555", "balance": 470, "referrals": [], "verified_by": None},####
+    
     "106011245": {"username": "piper", "password": "2006piper", "balance": 136, "referrals": [], "verified_by": None},
     "106126556": {"username": "elijah", "password": "opera45", "balance": 820, "referrals": [], "verified_by": None},
     "106234867": {"username": "sienna", "password": "harbour71", "balance": 290, "referrals": [], "verified_by": None},
@@ -280,7 +282,7 @@ USERS = {
     "116671201": {"username": "veronica", "password": "5463us81", "balance": 950, "referrals": [], "verified_by": None},
     "116785512": {"username": "percy", "password": "k//goala8", "balance": 270, "referrals": [], "verified_by": None},
     "1168903230": {"username": "matilda", "password": "didgeridoo95", "balance": 1127, "referrals": [], "verified_by": None},
-    "116901994": {"username": "theodore", "password": "theodorere", "balance": 391, "referrals": [], "verified_by": None}
+    "116901994": {"username": "theodore", "password": "theodorere", "balance": 391, "referrals": [], "verified_by": None},
 }
 # === States for conversation ===
 ASK_ID, ASK_USERNAME, ASK_PASSWORD = range(3)
@@ -364,7 +366,7 @@ async def withdraw(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("Please verify first using /start.")
         return
 
-    await update.message.reply_text("Invalid payment proof upholded or payment was made during site mantainance and was added to your account balance we advised you wait for 30-40 days or make new payment")
+    await update.message.reply_text("Activation fee not paid or Invalid payment proof upholded")
 
 async def handle_photo(update:Update,
     context: ContextTypes. DEFAULT_TYPE):
